@@ -1,0 +1,5 @@
+<mat-grid-list [cols]="breakpoint" rowHeight="1:0.5" (window:resize)="onResize($event)">
+    <mat-grid-tile *ngFor="let data of SortedArray">
+        <p class="beer"><label><h6>Beer :</h6></label> {{data.name}}</p>
+    </mat-grid-tile>
+  </mat-grid-list>

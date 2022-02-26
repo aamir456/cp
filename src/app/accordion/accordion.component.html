@@ -1,0 +1,21 @@
+<div class="action-buttons">
+    <button mat-button (click)="accordion.openAll()">Expand All</button>
+    <button mat-button (click)="accordion.closeAll()">Collapse All</button>
+</div>
+<mat-accordion multi>
+    <div *ngFor="let data of record">
+        <mat-expansion-panel>
+            <mat-expansion-panel-header>
+              <mat-panel-title>
+                  {{data.name}}
+              </mat-panel-title>
+              <mat-panel-description>
+                  <mat-icon> local_bar</mat-icon>
+              </mat-panel-description>
+            </mat-expansion-panel-header>
+            <p><label>tagline :</label> {{data.tagline}}</p>
+            <p><label>first_brewed :</label> {{data.first_brewed}}</p>
+        </mat-expansion-panel>
+    </div>
+</mat-accordion>
+

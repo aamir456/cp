@@ -1,0 +1,15 @@
+mat-grid-tile {
+    background: lightcoral;
+    display: grid;
+    grid-template-areas: beer beer beer beer beer ;
+    grid-column-end:inherit;
+}
+
+@media screen and (min-width: 768px) {
+    mat-grid-tile {
+        background: lightblue;
+    }
+    .beer{
+        align-self:inherit;
+    }
+}
